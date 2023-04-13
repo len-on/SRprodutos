@@ -15,6 +15,7 @@ function App() {
   //useState
   const [btnCadastrar, setBtnCadastrar] = useState(false);
   const [produtos, setProdutos] = useState([]);
+  const [objProduto, setObjProduto] = useState(produto);
 
   //UseEffect
   useEffect(() =>{
@@ -26,6 +27,7 @@ function App() {
   //Retorno
   return (
     <div>
+      <p>{JSON.stringify(objProduto)}</p>
       <Formulario botao={btnCadastrar}/>
       <Tabela vetor={produtos}/>
     </div>
