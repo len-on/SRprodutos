@@ -1,4 +1,4 @@
-function Formulario({botao, eventoTeclado, cadastrar ,obj}){
+function Formulario({botao, eventoTeclado, cadastrar, obj}){
     return(
         <form>
             <input type="text" value={obj.nome} onChange={eventoTeclado} name="nome" placeholder="Nome" className="form-control"/>
