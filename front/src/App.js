@@ -82,7 +82,7 @@ function App() {
         });
 
         //Alterar produto do vetorTemp
-        vetorTemp(indice) = objProduto;
+        vetorTemp[indice] = objProduto;
 
         //Atualizar o vetor de produtos
         setProdutos(vetorTemp);
